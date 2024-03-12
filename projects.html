@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700;800&family=Inter:wght@400;500;700&display=swap" as="style">
+  <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Ionicons -->
+  <link rel="preload" href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" as="style">
+  <link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script>
+    
+    if (localStorage.getItem("theme") === "dark") {
+      document.documentElement.setAttribute("dark", "");
+      document.documentElement.classList.add('dark-mode');
+    }
+    
+  </script>
+<script src="https://www.google.com/recaptcha/api.js"></script>
+</head>
+<body>
+
+  
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CJSQLNX1D1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'G-CJSQLNX1D1');
+</script>
+  
+
+  <!-- begin header -->
+<header class="header" id="top">
+  <div class="container-big">
+    <div class="row">
+      <div class="header__inner col col-12">
+        <div class="logo">
+          <a class="logo__link" href="index.html">
+            <img class="logo__image" src="assets/img/logo9.png" alt="Yudhisteer Chintaram">
+          </a>
+        </div>
+
+        <nav class="main-nav">
+          <div class="main-nav__box">
+            <div class="nav__icon-close">
+              <i class="ion ion-md-close"></i>
+            </div>
+            <div class="nav__title">Menu</div>
+            <ul class="nav__list list-reset">
+
+              
+                
+                <li class="nav__item">
+                  <a href="index.html" class="nav__link">Home</a>
+                </li>
+                
+              
+                
+                <li class="nav__item">
+                  <a href="projects.html" class="nav__link active-link">Projects</a>
+                </li>
+                
+              
+                
+                <li class="nav__item">
+                  <a href="achievements.html" class="nav__link">Achievements</a>
+                </li>
+                
+            </ul>
+          </div>
+        </nav>
+
+        <div class="nav-button">
+          <i class="nav__icon icon__menu ion ion-md-menu"></i>
+
+          
+          <div class="toggle-theme toggle-theme-js">
+            <div class="toggle-moon" title="Enable dark mode"><i class="ion ion-ios-moon"></i></div>
+            <div class="toggle-sun" title="Enable light mode"><i class="ion ion-ios-sunny"></i></div>
+          </div>
+          
+        </div>
+
+      </div>
+    </div>
+  </div>
+</header>
+<!-- end header -->
+
+
+
+
+
+  <!-- begin content -->
+  <main class="content" aria-label="Content">
+    <div class="container">
+  <div class="page-head">
+    <h1 class="page-title">Projects </h1>
+    <p class="page-description">Highlights from my experiences...</p>
+  </div>
+</div>
+
+
+
+<div class="projects-page container animate">
+  <div class="row">
+
+    <!--  -->
+
+    <article class="project col col-4 col-d-6 col-t-12">
+      <div class="project__content">
+        <a href="nerf.html" class="project__image">
+          <img class="lazy" data-src="assets/img/nerf5.gif" alt="NeRF">
+        </a>
+        <div class="project__info">
+          <h3 class="project__title"><a href="nerf.html">NeRF</a></h3>
+          <div class="project__subtitle">A Comparative Analysis with Blender</div>
+        </div>
+      </div>
+    </article>
+
+    <!--  -->
+    
+    <article class="project col col-4 col-d-6 col-t-12">
+      <div class="project__content">
+        <a href="" class="project__image">
+          <img class="lazy" data-src="assets/img/pointnet2.gif" alt="One Touch Doctor">
+        </a>
+        <div class="project__info">
+          <h3 class="project__title"><a href="#">Robotic Grasping Detection with PointNet</a></h3>
+          <div class="project__subtitle">Where to grab on everyday objects</div>
+        </div>
+      </div>
+    </article>
+
+    <!--  -->
+    
+    <article class="project col col-4 col-d-6 col-t-12">
+      <div class="project__content">
+        <a href="#" class="project__image">
+          <img class="lazy" data-src="assets/img/open3d2.gif" alt="ASCRepo">
+        </a>
+        <div class="project__info">
+          <h3 class="project__title"><a href="/project/ascrepo">Point Clouds: 3D Perception with Open3D</a></h3>
+          <div class="project__subtitle">A friendly tutorial on point clouds</div>
+        </div>
+      </div>
+    </article>
+
+    <!--  -->
+    
+    <article class="project col col-4 col-d-6 col-t-12">
+      <div class="project__content">
+        <a href="/project/racecar" class="project__image">
+          <img class="lazy" data-src="assets/img/3dreconstruction2.gif" alt="Autonomous Race-car">
+        </a>
+        <div class="project__info">
+          <h3 class="project__title"><a href="/project/racecar">3D-Reconstruction with Uncalibrated Stereo</a></h3>
+          <div class="project__subtitle">How to reconstruct using Multi-view Stereo and Structure from Motion</div>
+        </div>
+      </div>
+    </article>
+
+    <!--  -->
+    
+    <article class="project col col-4 col-d-6 col-t-12">
+      <div class="project__content">
+        <a href="/project/progsynth" class="project__image">
+          <img class="lazy" data-src="assets/img/kf2.gif" alt="Program Synthesis">
+        </a>
+        <div class="project__info">
+          <h3 class="project__title"><a href="/project/progsynth">UAV Drone: Object Tracking using Kalman Filter</a></h3>
+          <div class="project__subtitle">implementation of a Linear Kalman Filter from scratch</div>
+        </div>
+      </div>
+    </article>
+
+    <!--  -->
+    
+    <article class="project col col-4 col-d-6 col-t-12">
+      <div class="project__content">
+        <a href="/project/mapf" class="project__image">
+          <img class="lazy" data-src="assets/img/stereovision2.gif" alt="PD* Lite">
+        </a>
+        <div class="project__info">
+          <h3 class="project__title"><a href="/project/mapf">Pseudo-LiDARs with Stereo Vision</a></h3>
+          <div class="project__subtitle">Stereo Global Matching (SGBM) for depth perception</div>
+        </div>
+      </div>
+    </article>
+
+    <!--  -->
+    
+    <article class="project col col-4 col-d-6 col-t-12">
+      <div class="project__content">
+        <a href="/project/plants" class="project__image">
+          <img class="lazy" data-src="assets/img/vit1.gif" alt="Perception Stack for an Agrobot">
+        </a>
+        <div class="project__info">
+          <h3 class="project__title"><a href="/project/plants">Vision Transformer-Based Multi-Class Classification for Simulated 6DoF Robot</a></h3>
+          <div class="project__subtitle">Generating large-scale synthetic dataset and coding a Vision Transformer (ViT) model from scratch</div>
+        </div>
+      </div>
+    </article>
+
+    <!--  -->
+    
+    <article class="project col col-4 col-d-6 col-t-12">
+      <div class="project__content">
+        <a href="/project/ffrrt" class="project__image">
+          <img class="lazy" data-src="assets/img/mot1.gif" alt="FFRRT*">
+        </a>
+        <div class="project__info">
+          <h3 class="project__title"><a href="/project/ffrrt">Real-time Multi-Object Tracking for Rescue Operations</a></h3>
+          <div class="project__subtitle">SORT and Deep SORT: To support rescue efforts by tracking people and their movements in disasters</div>
+        </div>
+      </div>
+    </article>
+
+    <!--  -->
+    
+    <article class="project col col-4 col-d-6 col-t-12">
+      <div class="project__content">
+        <a href="/project/cheating" class="project__image">
+          <img class="lazy" data-src="assets/img/of1.gif" alt="Learning by Cheating">
+        </a>
+        <div class="project__info">
+          <h3 class="project__title"><a href="/project/cheating">Optical Flow Obstacle Avoidance for UAV</a></h3>
+          <div class="project__subtitle">unsupervised sense-and-avoid system for UAVs</div>
+        </div>
+      </div>
+    </article>
+
+    <!--  -->
+    
+    <article class="project col col-4 col-d-6 col-t-12">
+      <div class="project__content">
+        <a href="/project/memseg" class="project__image">
+          <img class="lazy" data-src="assets/img/6dof1.gif" alt="Memory Guided Road Segmentation">
+        </a>
+        <div class="project__info">
+          <h3 class="project__title"><a href="/project/memseg">Digital Twin of Anthropomorphic Robotic Arm</a></h3>
+          <div class="project__subtitle">Palletization simulation in textile industry</div>
+        </div>
+      </div>
+    </article>
+
+    <!--  -->
+    
+    <article class="project col col-4 col-d-6 col-t-12">
+      <div class="project__content">
+        <a href="/project/decisiontree" class="project__image">
+          <img class="lazy" data-src="assets/img/gan1.gif" alt="Decision Trees">
+        </a>
+        <div class="project__info">
+          <h3 class="project__title"><a href="/project/decisiontree">Generative AI: Generating Design Ideas from Keywords</a></h3>
+          <div class="project__subtitle">WGAN / VQGAN + CLIP model for garment designs</div>
+        </div>
+      </div>
+    </article>
+
+    <!--  -->
+    
+    <article class="project col col-4 col-d-6 col-t-12">
+      <div class="project__content">
+        <a href="/project/rrt" class="project__image">
+          <img class="lazy" data-src="assets/img/genetic1.gif" alt="RRT*">
+        </a>
+        <div class="project__info">
+          <h3 class="project__title"><a href="/project/rrt">Box Optimization with Genetic Algorithm in 3D</a></h3>
+          <div class="project__subtitle">Optimize shipping container dimensions to reduce space wastage</div>
+        </div>
+      </div>
+    </article>
+
+    <!--  -->
+    
+    <article class="project col col-4 col-d-6 col-t-12">
+      <div class="project__content">
+        <a href="/project/rl" class="project__image">
+          <img class="lazy" data-src="assets/img/face1.gif" alt="Experimenting with RL">
+        </a>
+        <div class="project__info">
+          <h3 class="project__title"><a href="/project/rl">Automating Attendance System using Face Recognition with Masks</a></h3>
+          <div class="project__subtitle">Covid-19 prevention with contactless solution</div>
+        </div>
+      </div>
+    </article>
+
+    <!--  -->
+    
+    <article class="project col col-4 col-d-6 col-t-12">
+      <div class="project__content">
+        <a href="/project/raceline" class="project__image">
+          <img class="lazy" data-src="assets/img/rl1.gif" alt="Finding Optimal Raceline">
+        </a>
+        <div class="project__info">
+          <h3 class="project__title"><a href="/project/raceline">Reinforcement Learning: Optimizing Warehouse Flows</a></h3>
+          <div class="project__subtitle">logistic model for autonomous warehouse bots </div>
+        </div>
+      </div>
+    </article>
+
+    <!--  -->
+    
+    <article class="project col col-4 col-d-6 col-t-12">
+      <div class="project__content">
+        <a href="/project/quad" class="project__image">
+          <img class="lazy" data-src="assets/img/detectron2.png" alt="Design & Control of a  Planar Quad">
+        </a>
+        <div class="project__info">
+          <h3 class="project__title"><a href="/project/quad">Optimizing Quality Control with Detectron2</a></h3>
+          <div class="project__subtitle">automate the process of garment measurements and data entry</div>
+        </div>
+      </div>
+    </article>
+
+    <!--  -->
+    
+    <article class="project col col-4 col-d-6 col-t-12">
+      <div class="project__content">
+        <a href="/project/panorama" class="project__image">
+          <img class="lazy" data-src="assets/img/ar1.gif" alt="Panorama Stitching">
+        </a>
+        <div class="project__info">
+          <h3 class="project__title"><a href="/project/panorama">Augmented-Reality-for-Preventive</a></h3>
+          <div class="project__subtitle">AR app of centrifugal pump</div>
+        </div>
+      </div>
+    </article>
+
+    <!--  -->
+    
+    <article class="project col col-4 col-d-6 col-t-12">
+      <div class="project__content">
+        <a href="/project/nlm" class="project__image">
+          <img class="lazy" data-src="assets/img/ar2.gif" alt="Non Local Means">
+        </a>
+        <div class="project__info">
+          <h3 class="project__title"><a href="/project/nlm">Augmented Reality and IoT for Machines Monitoring</a></h3>
+          <div class="project__subtitle">Predictive maintenance with IoT and AR</div>
+        </div>
+      </div>
+    </article>
+
+    <!--  -->
+    
+    <article class="project col col-4 col-d-6 col-t-12">
+      <div class="project__content">
+        <a href="/project/eigenface" class="project__image">
+          <img class="lazy" data-src="assets/img/ts1.png" alt="Eigen Faces for One Shot Person Identification">
+        </a>
+        <div class="project__info">
+          <h3 class="project__title"><a href="/project/eigenface">Predicting the Price of "Anything" on Stock Market</a></h3>
+          <div class="project__subtitle">Can we beat the market?</div>
+        </div>
+      </div>
+    </article>
+
+    <!--  -->
+    
+    <article class="project col col-4 col-d-6 col-t-12">
+      <div class="project__content">
+        <a href="/project/bayesian" class="project__image">
+          <img class="lazy" data-src="assets/img/bus1.png" alt="Bayesian Image Matting">
+        </a>
+        <div class="project__info">
+          <h3 class="project__title"><a href="/project/bayesian">Automated Bus Lock</a></h3>
+          <div class="project__subtitle">Purely mechanical system to secure exit doors on buses</div>
+        </div>
+      </div>
+    </article>
+
+    <!--  -->
+    
+    <article class="project col col-4 col-d-6 col-t-12">
+      <div class="project__content">
+        <a href="/project/quad-1" class="project__image">
+          <img class="lazy" data-src="assets/img/pomer2.png" alt="Emergency Quadrotor Surveillance System">
+        </a>
+        <div class="project__info">
+          <h3 class="project__title"><a href="/project/quad-1">Pomer</a></h3>
+          <div class="project__subtitle">Portable Emergency generator FOR FIREMEN </div>
+        </div>
+      </div>
+    </article>
+
+    <!--  -->
+    
+    <article class="project col col-4 col-d-6 col-t-12">
+      <div class="project__content">
+        <a href="/project/foodbuddy" class="project__image">
+          <img class="lazy" data-src="assets/img/lol2.png" alt="FoodBuddy">
+        </a>
+        <div class="project__info">
+          <h3 class="project__title"><a href="/project/foodbuddy">Liter of Light</a></h3>
+          <div class="project__subtitle">Generating light with water and plastic bottles</div>
+        </div>
+      </div>
+    </article>
+
+    <!--  -->
+    
+    <article class="project col col-4 col-d-6 col-t-12">
+      <div class="project__content">
+        <a href="/project/renderlib" class="project__image">
+          <img class="lazy" data-src="assets/img/dog1.png" alt="Python Render Library for Scientific Animations">
+        </a>
+        <div class="project__info">
+          <h3 class="project__title"><a href="/project/renderlib">Automated Dog Feeder</a></h3>
+
+          <div class="project__subtitle">Automated Food dispenser system for your doggie</div>
+          
+        </div>
+      </div>
+    </article>
+
+    <!--  -->
+    
+    <article class="project col col-4 col-d-6 col-t-12">
+      <div class="project__content">
+        <a href="/project/nnviz" class="project__image">
+          <img class="lazy" data-src="assets/img/banana2.png" alt="Banana Tree Fibre Extractor">
+        </a>
+        <div class="project__info">
+          <h3 class="project__title"><a href="/project/nnviz">Banana Tree Fibre Extractor</a></h3>
+          
+          <div class="project__subtitle">banana trees as an alternate solution for plastic bags</div>
+          
+        </div>
+      </div>
+    </article>
+
+    <!--  -->
+    
+    <article class="project col col-4 col-d-6 col-t-12">
+      <div class="project__content">
+        <a href="/project/insiit" class="project__image">
+          <img class="lazy" data-src="assets/img/wheelchair2.jpg" alt="InsIIT">
+        </a>
+        <div class="project__info">
+          <h3 class="project__title"><a href="/project/insiit">Stair-Climber Wheelchair</a></h3>
+          
+          <div class="project__subtitle">Easy attachable system</div>
+          
+        </div>
+      </div>
+    </article>
+
+    <!--  -->
+    
+    <article class="project col col-4 col-d-6 col-t-12">
+      <div class="project__content">
+        <a href="/project/libapp" class="project__image">
+          <img class="lazy" data-src="assets/img/app2.png" alt="Library @ IITGN">
+        </a>
+        <div class="project__info">
+          <h3 class="project__title"><a href="/project/libapp">Smart Recharge App</a></h3>
+          
+          <div class="project__subtitle">OCR App for Mobile Account Recharge</div>
+          
+        </div>
+      </div>
+    </article>
+
+    <!--  -->
+    
+    <article class="project col col-4 col-d-6 col-t-12">
+      <div class="project__content">
+        <a href="/project/aml" class="project__image">
+          <img class="lazy" data-src="assets/img/mask1.png" alt="Amalthea '19 App">
+        </a>
+        <div class="project__info">
+          <h3 class="project__title"><a href="/project/aml">Low-Cost Covid-19 Mask</a></h3>
+          
+          <div class="project__subtitle">Re-using expired soft drink bottles for masks</div>
+          
+        </div>
+      </div>
+    </article>
+
+    <!--  -->
+    
+    <article class="project col col-4 col-d-6 col-t-12">
+      <div class="project__content">
+        <a href="/project/food" class="project__image">
+          <img class="lazy" data-src="assets/img/tree1.png" alt="Food Order Processing System">
+        </a>
+        <div class="project__info">
+          <h3 class="project__title"><a href="/project/food">ELI Endemic Plant</a></h3>
+          
+          <div class="project__subtitle">“One endemic plant per family” campaign</div>
+          
+        </div>
+      </div>
+    </article>
+
+    <!--  -->
+    
+    <article class="project col col-4 col-d-6 col-t-12">
+      <div class="project__content">
+        <a href="/project/eyantra" class="project__image">
+          <img class="lazy" data-src="assets/img/sleep2.png" alt="Indoor Emulation of Search & Rescue Drones">
+        </a>
+        <div class="project__info">
+          <h3 class="project__title"><a href="/project/eyantra">Blue Light App</a></h3>
+          
+          <div class="project__subtitle">Study of Drowsiness on Taxi Drivers</div>
+          
+        </div>
+      </div>
+    </article>
+
+    <!--  -->
+    
+  </div>
+</div>
+  </main>
+  <!-- end content -->
+
+  <!-- begin footer -->
+<footer class="footer">
+
+  <div class="footer__gallery">
+    
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+
+        <div class="footer__inner">
+          <div class="container">
+            <div class="row">
+      
+              <div class="col col-8 col-d-12">
+                <div class="footer__author">
+                  <div class="footer__author-avatar">
+                    <img class="lazy" data-src="assets/img/pp.jpeg" alt="Yudhisteer Chintaram">
+                  </div>
+                  <div class="footer__author-info">
+                    <h3 class="footer__author-name">Yudhisteer Chintaram</h3>
+                    <p class="footer__author-bio">Computer Vision-Machine Learning Engineer interested in Robotics and Autonomous vehicles.</p>
+                    
+                    <div class="social">
+                      <ul class="social__list list-reset">
+                        
+                        <li class="social__item">
+                          <a class="social__link" href="https://www.linkedin.com/in/yudhisteer/" target="_blank" rel="noopener"
+                            aria-label="Social link"><i class="ion ion-logo-linkedin"></i></a>
+                        </li>
+                        
+                        <li class="social__item">
+                          <a class="social__link" href="https://github.com/yudhisteer" target="_blank" rel="noopener"
+                            aria-label="Social link"><i class="ion ion-logo-github"></i></a>
+                        </li>
+                        
+                        <li class="social__item">
+                          <a class="social__link" href="https://twitter.com/YChintaram" target="_blank" rel="noopener"
+                            aria-label="Social link"><i class="ion ion-logo-twitter"></i></a>
+                        </li>
+                        
+                      </ul>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col col-4 col-d-12">
+                <div class="footer__nav">
+                  <h3 class="footer__nav-title">Navigation</h3>
+                  <ul class="footer__nav-list list-reset">
+                    
+                    <li class="footer__nav-item">
+                      <a href="index.html" class="footer__nav-link">Home</a>
+                    </li>
+                    
+                    <li class="footer__nav-item">
+                      <a href="projects.html" class="footer__nav-link">Projects</a>
+                    </li>
+                    
+                    <li class="footer__nav-item">
+                      <a href="achievements.html" class="footer__nav-link">Achievements</a>
+                    </li>
+                    
+                  </ul>
+                </div>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="footer__info">
+          <div class="footer__info-box">
+            <div class="copyright">2024 &copy; <a href="/">Yudhisteer Chintaram</a></div>
+            <div class="top" title="Top"><i class="ion ion-ios-arrow-up"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</footer>
+<!-- end footer -->
+
+<script src="assets/js/scripts.js"></script>
+<script src="assets/js/common.js"></script>
+</body>
+
+</html>
