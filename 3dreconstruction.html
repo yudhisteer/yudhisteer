@@ -102,9 +102,9 @@
     <div class="container">
   <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
   <div class="page-head">
-    <h1 class="page-title">NeRF</h1>
+    <h1 class="page-title">3D-Reconstruction with Uncalibrated Stereo</h1>
     
-    <p class="project-subtitle">Assessing NeRF's Efficacy in 3D Model Reconstruction: A Comparative Analysis with Blender</p>
+    <p class="project-subtitle">HOW TO RECONSTRUCT USING MULTI-VIEW STEREO AND STRUCTURE FROM MOTION</p>
     
   </div>
 
@@ -142,21 +142,21 @@
         <div class="carousel__track">
           <ul>
             
-            <li class="carousel__slide" style="background-image: url('assets/img/nerf3.gif');font-size:14px;">
+            <li class="carousel__slide" style="background-image: url('assets/img/3dreconstruction3.png');font-size:14px;">
               <div class="transbox">
-                <p>Constructing 3D model in Blender</p>
+                <p>1-Dimensional search for corresponding points</p>
               </div>
             </li>
             
-            <li class="carousel__slide" style="background-image: url('assets/img/nerf1.gif');font-size:14px;">
+            <li class="carousel__slide" style="background-image: url('assets/img/3dreconstruction2.gif');font-size:14px;">
               <div class="transbox">
-                <p>Gnerating synthetic images with corresponding intrinsic and extrinsic camera parameters</p>
+                <p>Dataset: Temple of the Dioskouroi in Agrigento, Sicily</p>
               </div>
             </li>
 
-            <li class="carousel__slide" style="background-image: url('assets/img/nerf5.gif');font-size:14px;">
+            <li class="carousel__slide" style="background-image: url('assets/img/3dreconstruction1.png');font-size:14px;">
               <div class="transbox">
-                <p>NeRF 3D Reconstruction over 5 epochs. Original (left) vs reconstructed (right)</p>
+                <p>Disparity map using SGBM</p>
               </div>
             </li>
             <!--   ------------------------CAROUSEL IMAGE AND SUBTITLES-------------------------     -->
@@ -180,7 +180,7 @@
 
 <!-- Button below the carousel -->
 <div class="section__navigation">
-  <a href="https://github.com/yudhisteer/Assessing-NeRF-s-Efficacy-in-3D-Model-Reconstruction-A-Comparative-Analysis-with-Blender" class="button button--primary section-button" target="_blank" rel="noopener noreferrer">Learn More on GitHub</a>
+  <a href="https://github.com/yudhisteer/3D-Reconstruction-with-Uncalibrated-Stereo" class="button button--primary section-button" target="_blank" rel="noopener noreferrer">Learn More on GitHub</a>
 </div>
 
 
@@ -460,26 +460,19 @@ div.transbox p{
 <ul style="list-style-type: none; padding: 0; margin-top: 50px;"></ul>
   <div class="project-content animate">
     <p>
-      In 2020, NeRF revolutionized 3D reconstruction by efficiently optimizing <strong>neural radiance fields</strong> to generate photorealistic views 
-      of scenes with complex geometry and appearance. In a previous project, I explored 3D reconstruction using <strong>Multi-View Stereo (MVS)</strong>
-      and <strong>Structure from Motion (SfM)</strong>, which yielded satisfactory results. However, NeRF, utilizing a <strong>fully connected (non-convolutional) 
-      deep network</strong>, achieved state-of-the-art outcomes.
+      A drone may encounter challenges navigating urban areas due to complex structures and obstacles. 
+      Traditional <strong>2D mapping</strong> lacks the <strong>situational awareness</strong> needed for safe and precise operations. To overcome this, 
+      we require a robust <strong>3D reconstruction</strong> solution, enabling drones to model environments accurately, plan optimal routes, 
+      detect obstacles, and ensure reliable deliveries. This technology improves <strong>collision avoidance</strong> and <strong>navigation</strong> in <strong>dynamic</strong> 
+      urban landscapes.
     </p>
 
     <p>
-      Inspired by my experience with Blender through the "Intro to Blender" course at UofR's Studio X, I aimed to enhance my 
-      Blender models using NeRF. I set out to determine how closely I could <strong>replicate</strong> a 3D Blender model by randomly generating 
-      images along with their intrinsic and extrinsic parameters, and feeding them into a NeRF model. This project focuses on 
-      constructing a <strong>vanilla-NeRF</strong> model from scratch, based on the NeRF paper <strong>"Representing Scenes as Neural Radiance Fields for
-      View Synthesis" (2020)</strong>. 
+      In this study, we assessed <strong>Multi-View Stereo (MVS)</strong> and <strong>Structure-from-Motion (SFM)</strong> for 3D reconstruction accuracy and 
+      efficiency. Using publicly available datasets, we found MVS excels in producing detailed reconstructions, while SFM is 
+      more efficient with varied viewpoints.
     </p>
-       
-    <p>
-        It's worth noting that recent advancements in NeRF methods, such as <strong>instant-NGP</strong>, leverage hashing
-        to reduce the required number of layers in the MLP. Additionally, for purely visual reconstruction, <strong>Gaussian Splatting</strong> 
-        has shown to be superior to NeRF. Nonetheless, this project serves as a valuable exercise in understanding the <strong>underlying 
-        mechanics</strong> of the groundbreaking NeRF paper that transformed 3D reconstruction.
-    </p>
+
   </div>
 <!--   ----------------------------------------------------PROJECT DESCRIPTION----------------------------------------------------     -->
 
