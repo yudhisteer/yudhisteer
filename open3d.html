@@ -102,9 +102,9 @@
     <div class="container">
   <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
   <div class="page-head">
-    <h1 class="page-title">Robotic Grasping Detection with PointNet</h1>
+    <h1 class="page-title">Point Clouds: 3D Perception with Open3D</h1>
     
-    <p class="project-subtitle">WHERE TO GRAB ON EVERYDAY OBJECTS</p>
+    <p class="project-subtitle">A FRIENDLY TUTORIAL ON POINT CLOUDS</p>
     
   </div>
 
@@ -140,19 +140,19 @@
         <div class="carousel__track">
           <ul>
             
-            <li class="carousel__slide" style="background-image: url('assets/img/pointnet3.png');font-size:14px;">
+            <li class="carousel__slide" style="background-image: url('assets/img/open3d1.png');font-size:14px;">
               <div class="transbox">
                 <p>Coding the PointNet model from scratch</p>
               </div>
             </li>
             
-            <li class="carousel__slide" style="background-image: url('assets/img/pointnet4.gif');font-size:14px;">
+            <li class="carousel__slide" style="background-image: url('assets/img/open3d2.gif');font-size:14px;">
               <div class="transbox">
                 <p>Collecting data with LiDAR using Polycam app</p>
               </div>
             </li>
 
-            <li class="carousel__slide" style="background-image: url('assets/img/pointnet2.gif');font-size:14px;">
+            <li class="carousel__slide" style="background-image: url('assets/img/open3d5.png');font-size:14px;">
               <div class="transbox">
                 <p>PointNet Classification and Segmentation to detect handles on everyday objects</p>
               </div>
@@ -178,7 +178,7 @@
 
 <!-- Button below the carousel -->
 <div class="section__navigation">
-  <a href="https://github.com/yudhisteer/Robotic-Grasping-Detection-with-PointNet" class="button button--primary section-button">Learn More on GitHub</a>
+  <a href="https://github.com/yudhisteer/Point-Clouds-3D-Perception-with-Open3D" class="button button--primary section-button">Learn More on GitHub</a>
 </div>
 
 
@@ -458,19 +458,25 @@ div.transbox p{
 <ul style="list-style-type: none; padding: 0; margin-top: 50px;"></ul>
   <div class="project-content animate">
     <p>
-      Humans quickly learn how to hold objects correctly, like grabbing a toothbrush by the handle. This skill develops early in life, with babies mastering the <strong>"pincer grasp"</strong> by around 1 year old.
+        In the realm of drone delivery, navigating with precision and avoiding obstacles is a significant challenge. 
+        While cameras are useful in certain situations, they have <strong>limitations</strong> such as <strong>reduced visibility</strong> in bad weather 
+        or <strong>low light</strong>. Monocular cameras, especially, struggle to accurately perceive <strong>complex 3D environments</strong>. Furthermore, 
+        identifying various obstacles in the environment, from trees to power lines, poses a challenge. 
     </p>
 
     <p>
-      In robotics, there's a lot of research on teaching robots to grasp objects. This project isn't about physically grasping objects but figuring out <strong>where</strong> to grasp them. 
-      We're training robots to recognize the <strong>optimal points</strong> to grasp on different objects, similar to how humans learn to find handles.
-    </p>
-
+        The dataset used for obstacle detection cannot cover every possible object. However, using <strong>3D data</strong> allows us to focus 
+        on the <strong>positions</strong> and <strong>velocities</strong> of objects relative to the drone, 
+        bypassing the need to <strong>recognize</strong> individual objects 
+        and improving the efficiency of the <strong>obstacle avoidance system</strong>.
     <p>
-
-      This project involves creating a <strong>PointNet</strong> model from scratch. We collected point cloud data using an iPhone's <strong>LiDAR</strong> via the <strong>Polycam</strong> app, focusing on three objects: <strong>Cup</strong>, <strong>Knife</strong>, and <strong>Pan</strong>. To clean our data, we used the <strong>RANSAC</strong> algorithm to remove any <strong>outliers</strong>. Due to our limited dataset, traditional image data augmentation techniques like scaling or reflection weren't suitable for point cloud data. We then labeled our point cloud using <strong>Segments.ai</strong> 
-      and processed the segmentation labels. Finally, we trained our model for both <strong>classification</strong> and <strong>part-segmentation</strong>, aiming to segment the handle on the object. While the model didn't perform as well on an out-of-sample dataset, 
-      it achieved over <strong>98%</strong> accuracy on our test set.
+        This project delves into practical point cloud analysis using the <strong>KITTI dataset</strong>. We start by visualizing the data 
+        with <strong>Open3D</strong> and <strong>downsampling</strong> it using <strong>Voxel Grid</strong>. Next, 
+        we employ the <strong>RANSAC</strong> algorithm to <strong>segment</strong> obstacles from the 
+        road surface, enhancing our understanding of the scene. By using <strong>DBSCAN</strong> clustering, we group similar obstacles together 
+        to gain more accurate <strong>spatial insights</strong>. To facilitate tracking, we create <strong>3D bounding boxes</strong> around each obstacle. 
+        Finally, we utilize <strong>surface reconstruction</strong> on a custom point cloud obtained from an iPhone's LiDAR. The aim of this 
+        project is to showcase the application of Machine Learning algorithms for <strong>processing point cloud data</strong> in 3D space.
     </p>
 
   </div>
@@ -481,14 +487,14 @@ div.transbox p{
 
   <!--   ----------------------------------------------------NEXT PROJECT----------------------------------------------------     -->
   <div class="project__nav animate">
-    <a class="project__prev" href="open3d.html">
+    <a class="project__prev" href="/project/hb">
       <div class="project__box">
         <span class="project__nav-info">Next Project <i class="ion ion-md-arrow-round-forward arrow-right"></i></span>
-        <h2 class="project__nav-title">Point Clouds: 3D Perception with Open3D</h2>
+        <h2 class="project__nav-title">3D-Reconstruction with Uncalibrated Stereo</h2>
       </div>
     </a>
-    <a class="project__nav-image" href="open3d.html">
-      <img class="lazy" data-src="assets/img/open3d2.gif" alt="Point Clouds: 3D Perception with Open3D">
+    <a class="project__nav-image" href="/project/hb">
+      <img class="lazy" data-src="assets/img/3dreconstruction2.gif" alt="3D-Reconstruction with Uncalibrated Stereo">
     </a>
   </div>
 
