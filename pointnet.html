@@ -191,7 +191,7 @@
 
 <!-- Button below the carousel -->
 <div class="section__navigation">
-  <a href="https://github.com/yudhisteer/Assessing-NeRF-s-Efficacy-in-3D-Model-Reconstruction-A-Comparative-Analysis-with-Blender" class="button button--primary section-button">Learn More on GitHub</a>
+  <a href="https://github.com/yudhisteer/Robotic-Grasping-Detection-with-PointNet" class="button button--primary section-button">Learn More on GitHub</a>
 </div>
 
 
@@ -476,12 +476,21 @@ div.transbox p{
 <ul style="list-style-type: none; padding: 0; margin-top: 50px;"></ul>
   <div class="project-content animate">
     <p>
-      In 2020, the NeRF 3D reconstruction technique introduced a new method that allows for creating highly-realistic scene from images only. This approach marked a significant leap from previous methods like Multi-View Stereo (MVS) and Structure from Motion (SfM). As such, NeRF uses a fully connected (non-convolutional) deep network to represent a scene that achieved state-of-the-art results.
+      Humans quickly learn how to hold objects correctly, like grabbing a toothbrush by the handle. This skill develops early in life, with babies mastering the <strong>"pincer grasp"</strong> by around 1 year old.
     </p>
 
     <p>
-      After taking an "Intro to Blender" course, I started a project to test how accurately NeRF could replicate my 3D Blender model using solely images with their corresponding camera parameters. The goal of this project was to build a NeRF model from scratch, based on the NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis (2020) paper, to learn the mechanics how it works.
+      In robotics, there's a lot of research on teaching robots to grasp objects. This project isn't about physically grasping objects but figuring out <strong>where</strong> to grasp them. 
+      We're training robots to recognize the optimal points to grasp on different objects, similar to how humans learn to find handles.
     </p>
+
+    <p>
+
+      This project involves creating a <strong>PointNet</strong> model from scratch. We collected point cloud data using an iPhone's <strong>LiDAR</strong> via the <strong>Polycam</strong> app, focusing on three objects: <strong>Cup</strong>, <strong>Knife</strong>, and <strong>Pan</strong>. To clean our data, we used the <strong>RANSAC</strong> algorithm to remove any <strong>outliers</strong>. Due to our limited dataset, traditional image data augmentation techniques like scaling or reflection weren't suitable for point cloud data. We then labeled our point cloud using <strong>Segments.ai</strong> 
+      and processed the segmentation labels. Finally, we trained our model for both <strong>classification</strong> and <strong>part-segmentation</strong>, aiming to segment the handle on the object. While the model didn't perform as well on an out-of-sample dataset, 
+      it achieved over <strong>98%</strong> accuracy on our test set.
+    </p>
+
   </div>
 <!--   ----------------------------------------------------PROJECT DESCRIPTION----------------------------------------------------     -->
 
